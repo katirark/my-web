@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katira Ranjan Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366; /* Dark Blue */
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: slideDown 1s ease;
+        }
+
+        /* Sections */
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #e6f0ff; /* Light Blue */
+            border-left: 6px solid #003366;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeUp 1s ease;
+        }
+
+        /* Hover effect */
+        .section:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        /* Table Style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            animation: fadeUp 1.2s ease;
+        }
+
+        table, th, td {
+            border: 1px solid #003366;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* Hover effect for table rows */
+        tr:hover td {
+            background-color: #d6e4ff;
+            cursor: pointer;
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from { transform: translateY(-40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Katira Ranjan - Portfolio
+    </header>
+
+    <!-- My Self Section -->
+    <div class="section">
+        <h2>My Self</h2>
+        <p>
+            My name is <b>Katira Ranjan</b>. I completed my high school education at 
+            <b>Government Girls High School</b>. I am currently pursuing my 
+            <b>Graduation at Noble University</b>. I am passionate about software development 
+            and enjoy learning new technologies that help me grow in the IT field.
+        </p>
+    </div>
+
+    <!-- Studies Section -->
+    <div class="section">
+        <h2>Studies</h2>
+        <p>These are the subjects I have studied:</p>
+
+        <table>
+            <tr>
+                <th>Subject</th>
+            </tr>
+            <tr><td>C</td></tr>
+            <tr><td>C++</td></tr>
+            <tr><td>Java</td></tr>
+            <tr><td>DBMS</td></tr>
+            <tr><td>Web Designing</td></tr>
+            <tr><td>Software Development</td></tr>
+        </table>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+        <h2>Skills</h2>
+        <p>These are the skills I have developed:</p>
+
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Programming</td>
+                <td>C, C++, Java</td>
+            </tr>
+            <tr>
+                <td>DBMS</td>
+                <td>Knowledge of databases and SQL</td>
+            </tr>
+            <tr>
+                <td>Web Designing</td>
+                <td>Basic front-end development</td>
+            </tr>
+            <tr>
+                <td>Software Development</td>
+                <td>Logic building and project development</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Career Section -->
+    <div class="section">
+        <h2>Career</h2>
+        <p>
+            My goal is to become a professional <b>Software Developer</b>. I want to work in an IT company 
+            where I can apply my knowledge, learn new technologies, and contribute to useful and meaningful projects.
+        </p>
+    </div>
+
+</body>
+</html>
